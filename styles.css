@@ -1,0 +1,121 @@
+:root{
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal:  hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-slate-blue:hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle:  hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+* {
+    font-size: 18px;
+    font-family: Hanken Grotesk, "sans serif";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+
+main, .resultCard, .summary, ul {
+    flex-direction: column;
+}
+
+body {
+    background-color: var(--pale-blue);
+}
+
+main {
+    background-color: var(--white);
+}
+
+.resultCard {
+    background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+    align-items: center;
+}
+
+.resultCard p {
+    text-align: center;
+}
+
+.circle {
+    width: 40vw;
+    height: 40vw;
+    background-image: linear-gradient(to bottom, var(--violet-blue-circle), var(--persian-blue-circle));
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex-direction: column;
+}
+
+.result{
+    font-size: 15vw;
+    font-weight: 800;
+}
+
+.resultCard h2, .result, button {
+    color: var(--white);
+}
+
+.resultTitle, .resultCard > p, .circle p {
+    color: var(--light-lavender);
+}
+
+.resultTitle, .resultCard h2{
+    font-weight: 800;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.quality {
+    font-weight: 700;
+}
+
+li:nth-child(1){
+    background-color: color-mix(in srgb, var(--light-red), transparent 90%);
+}
+
+.reaction {
+    color: var(--light-red);
+}
+
+li:nth-child(2) {
+    background-color: color-mix(in srgb, var(--orange-yellow), transparent 90%);
+}
+
+.memory{
+    color: var(--orange-yellow);
+}
+
+li:nth-child(3){
+    background-color: color-mix(in srgb, var(--green-teal), transparent 90%);
+}
+
+.verbal{
+    color: var(--green-teal);
+}
+
+li:nth-child(4){
+    background-color: color-mix(in srgb, var(--cobalt-blue), transparent 90%);
+}
+
+.visual{
+    color: var(--cobalt-blue)
+}
+
+button {
+    background-color: var(--dark-gray-blue);
+    border: none
+}
