@@ -42,6 +42,18 @@ main {
 .resultCard {
     background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
     align-items: center;
+    gap: 1rem;
+    padding: 2.5rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.resultTitle {
+    margin-bottom: 0.5rem;
+}
+
+.resultCard h2 {
+    font-size: 28px;
+    font-weight: 500;
 }
 
 .resultCard p {
@@ -56,6 +68,11 @@ main {
     align-items: center;
     border-radius: 50%;
     flex-direction: column;
+}
+
+.circle p {
+    font-weight: 500;
+
 }
 
 .result{
@@ -75,12 +92,46 @@ main {
     font-weight: 800;
 }
 
+.summary{
+    padding: 1rem 1.5rem;
+}
+
+.summary h2 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    gap: 1rem;
+}
+
+li {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+
+}
+li > div {
+    gap: 0.5rem;
+}
 ul {
     list-style-type: none;
 }
 
 .quality {
     font-weight: 700;
+}
+
+
+
+.ratingOutput {
+    color: var(--dark-gray-blue);
+    font-weight: 800;
+}
+
+.rating{
+    color: color-mix(in srgb, var(--light-lavender), #000000 30%);
+    font-weight: 800;
 }
 
 li:nth-child(1){
@@ -117,5 +168,9 @@ li:nth-child(4){
 
 button {
     background-color: var(--dark-gray-blue);
-    border: none
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    font-weight: 700;
 }
